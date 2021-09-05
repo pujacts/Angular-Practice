@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
 import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
 import { MenuComponent } from './menu/menu.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { LogOutComponent } from './log-out/log-out.component'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component'
     ListToDosComponent,
     MenuComponent,
     FooterComponent,
+    LogOutComponent,
   ],
   imports: [
     BrowserModule,
