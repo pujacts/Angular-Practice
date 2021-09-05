@@ -11,8 +11,14 @@ export class HardcodedAuthenticationService {
   {
     if(username==="puja" && password==='dummy')
     {
+      sessionStorage.setItem('autheticateUser', username);
       return true;
     }
     return false;
+  }
+
+  isValidUserLogin(){
+    let user = sessionStorage.getItem('autheticateUser');
+    return !(user===null);
   }
 }
